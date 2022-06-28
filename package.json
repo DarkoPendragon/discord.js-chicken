@@ -1,0 +1,26 @@
+{
+  "name": "discord.js-chicken",
+  "version": "1.0.0",
+  "description": "React with chicken emojis (or custom) to random messages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarkoPendragon/discord.js-chicken.git"
+  },
+  "keywords": [
+    "discord.js",
+    "addon",
+    "discord",
+    "emoji",
+    "bot"
+  ],
+  "author": "Darko Pendragon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DarkoPendragon/discord.js-chicken/issues"
+  },
+  "homepage": "https://github.com/DarkoPendragon/discord.js-chicken#readme"
+}
