@@ -22,7 +22,7 @@ module.exports = (client, options = {}) => {
 	client.on('messageCreate', (message) => {
 		if (message.author.bot || message.system || !message.member) return;
 		const ran = getRandomInt(options?.minPercent ?? 0, options?.maxPercent ?? 100, options?.decimalPlaces ?? 2)
-		let emojis = options?.emojis ?? [{chance: options.chance ?? 0.5, emoji: "🐔"}, {chance: 0.3, emoji: "🐓"}];
+		let emojis = Array.from(options?.emojis ?? [{chance: options.chance ?? 0.5, emoji: "🐔"}, {chance: 0.3, emoji: "🐓"}]);
 		let didReact = false
 		function doNext() {
 			let emo = emojis.shift()
