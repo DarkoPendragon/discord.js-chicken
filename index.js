@@ -15,7 +15,7 @@ module.exports = (client, options = {}) => {
     }
 
     client.on('interactionCreate', (interaction) => {
-    	if (!interaction.isButton() && interaction.customId != "LAUGHAT") return;
+    	if (!interaction.isButton() || interaction.customId != "LAUGHAT") return;
         interaction.update({ embeds: [new MessageEmbed(interaction.message.embeds[0]).setFooter({ text: `${interaction.member.displayName ?? interaction.user.username} laughed first!`, iconURL: interaction.member?.displayAvatarURL({ dynamic: true }) })], components: [] }).catch(client.sendError)
     })
 

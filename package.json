@@ -1,6 +1,6 @@
 {
   "name": "discord.js-chicken",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React with chicken emojis (or custom) to random messages.",
   "main": "index.js",
   "scripts": {
